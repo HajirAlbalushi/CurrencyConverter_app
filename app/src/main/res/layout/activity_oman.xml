@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_tertiary80"
+    tools:context=".OmanActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="194dp"
+        android:layout_height="91dp"
+        android:text="@string/oman5"
+        android:textAlignment="center"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025"
+        tools:ignore="TextSizeCheck" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/enter_number1"
+        android:inputType="number"
+        android:drawableStart="@drawable/baseline_currency_exchange_24"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="#7E57C2"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.212" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="convertmoney"
+        android:text="@string/enter1"
+        android:textSize="34sp"
+        android:backgroundTint="@color/purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber"
+        app:layout_constraintVertical_bias="0.121"
+        tools:ignore="OnClick,UsingOnClickInXml,VisualLintButtonSize" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="316dp"
+        android:layout_height="244dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.084"
+        app:srcCompat="@drawable/download"
+        android:contentDescription="@string/image2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

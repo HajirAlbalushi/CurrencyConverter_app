@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_tertiary80"
+    tools:context=".SaudiArabiaActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="249dp"
+        android:layout_height="64dp"
+        android:text="@string/saudi_arabia4"
+        android:textAlignment="center"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        tools:ignore="TextSizeCheck" />
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/enter_number"
+        android:inputType="number"
+        android:drawableStart="@drawable/baseline_currency_exchange_24"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="#7E57C2"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.21"
+        tools:ignore="LabelFor,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="ConvertMoney"
+        android:text="@string/enter3"
+        android:backgroundTint="@color/purple"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber2"
+        app:layout_constraintVertical_bias="0.155"
+        tools:ignore="UsingOnClickInXml,VisualLintButtonSize" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="322dp"
+        android:layout_height="238dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:srcCompat="@drawable/download1"
+        tools:ignore="ImageContrastCheck"
+        android:contentDescription="@string/image3"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
